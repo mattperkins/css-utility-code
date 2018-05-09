@@ -1,8 +1,1 @@
-# INSTALL 
-## yarn 
-# RUN 
-## yarn start 
-# ENDPOINTS 
-## localhost: 
-# DEPLOY 
-## npm build
+# A collection of CSS syntax examples
