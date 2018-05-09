@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS variables :: before</title>
+<style>
+    *, *::before, *::after{
+  box-sizing: border-box;
+}
+:root {
+  --color: #333; 
+  --size: 80vw;
+  --circle: #f7f7f7;
+  --border: 10px;
+  --text: 10vw;
+  --font: 'Helvetica Neue';
+}
+body {
+  font-size: var(--text);
+  font-family: var(--font);
+  font-weight: 200;
+  display: grid;
+  -webkit-place-items: center;
+  height: calc(100vh - 20vh);
+  color: var(--color);
+}
+.card{
+  position: relative;
+  background: var(--circle);
+  height: var(--size);
+  width: var(--size);
+  border-radius: 50%;
+  clip-path: circle();
+  border: var(--border) solid var(--color)
+}
+.card::before{
+  content: 'Hello, World!';
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+</style>
+</head>
+<body>
+ <div class="card"></div>   
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="shapes with clip=path">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Shapes with clip path</title>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+    .box{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+img:nth-child(1){
+  transform: skew(0, 20deg);
+}
+img:nth-child(2){
+  clip-path: circle();
+}
+img:nth-child(3){
+  clip-path: polygon(0px 0, 100% 100%,0 100%);
+  transform: rotate(-45deg);
+  margin-top: -25px;
+}
+.cross{
+  height: 80px;
+  width: 80px;
+  background: #f33;
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+</style>
+</head>
+<body>
+<div class="box">
+
+  <img src="http://placehold.it/50" alt="">
+  <img src="http://placehold.it/50" alt="">  
+  <img src="http://placehold.it/50" alt="">
+ 
+  <div class="cross"></div>
+
+    </div>
+    </div>
+
+</body>
+</html>
