@@ -22,7 +22,10 @@ body {
 	position: relative; 
 }
 
-.content {
+.wrapper {
+	max-width: 600px;
+	width: 95%;
+	margin: auto;
 	padding: 3rem 3rem;
 }
 
@@ -59,15 +62,20 @@ $nice-red: #c0001d
 </head>
 <body>
 
-  <div class="content"><p>
-		This is the perfect font family and font size for reading / long articles. I'm not completely sure about the line <span id="green">height</span> at the moment, which is currently set to 1.6. That may be slightly too much but I shall experiment further and fine tune.
-		</p></div>
+  <div class="wrapper">
+		
+	<section>
+		<p style="background: white;">
+			This is the perfect font family and font size for reading / long articles. I'm not completely sure about the line <span id="green">height</span> at the moment, which is currently set to 1.6. That may be slightly too much but I shall experiment further and fine tune.
+		</p>
+	</section>
 
 	<section>
 	  <p>
 	    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque provident optio quisquam <span>exercitationem</span> qui, nam similique cupiditate ea asperiores voluptas, ratione, a soluta ad numquam natus ipsam quo architecto, excepturi?
 	  </p>
 	</section>
-	
+
+	</div>
 	</body>
 </html>
